@@ -23,24 +23,22 @@ public class FullNameParser {
         String lastName = fullName[1];
 
 
-
         if (fullName.length == 2) {
-            System.out.printf("First name: %s\nMiddle name: (none)\nLast name: %s" , firstName, lastName);
+            System.out.printf("First name: %s\nMiddle name: (none)\nLast name: %s" , firstName.trim(), lastName.trim());
 
 
-        }else{
+        }else if (fullName.length == 3){
             String middleName = fullName[1];
             String lastName1 = fullName[2];
-            System.out.printf("First name: %s\nMiddle name: %s\nLast name: %s", firstName, middleName, lastName1);
+            System.out.printf("First name: %s\nMiddle name: %s\nLast name: %s", firstName.trim(), middleName.trim(), lastName1.trim());
 
+
+        }else {
+            System.out.println("To many values");
         }
 
 
-
     }
-
-    //Creating methods
-
 
 
 }
