@@ -8,7 +8,7 @@ public class FullNameParser {
 
     public static void main(String[] args) {
 
-        //Creating a Scanner
+        //!Creating a Scanner
         Scanner nameSC = new Scanner(System.in);
 
         System.out.print("What is your full name: ");
@@ -36,7 +36,6 @@ public class FullNameParser {
         }else {
             System.out.println("To many values");
         }
-
 
     }
 
