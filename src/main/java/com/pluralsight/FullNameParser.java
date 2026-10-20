@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 
@@ -10,17 +11,36 @@ public class FullNameParser {
         //Creating a Scanner
         Scanner nameSC = new Scanner(System.in);
 
-        System.out.println("What is your full name: ");
+        System.out.print("What is your full name: ");
 
         String input = nameSC.nextLine();
 
         String[] fullName = input.split(" ");
 
-        System.out.println(fullName[0]);
+
+        String firstName = fullName[0];
+
+        String lastName = fullName[1];
+
+
+
+        if (fullName.length == 2) {
+            System.out.printf("First name: %s\nMiddle name: (none)\nLast name: %s" , firstName, lastName);
+
+
+        }else{
+            String middleName = fullName[1];
+            String lastName1 = fullName[2];
+            System.out.printf("First name: %s\nMiddle name: %s\nLast name: %s", firstName, middleName, lastName1);
+
+        }
 
 
 
     }
 
     //Creating methods
+
+
+
 }
