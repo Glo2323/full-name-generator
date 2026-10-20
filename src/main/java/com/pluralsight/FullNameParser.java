@@ -11,27 +11,29 @@ public class FullNameParser {
         //!Creating a Scanner
         Scanner nameSC = new Scanner(System.in);
 
+
+        //?asking for their name
         System.out.print("What is your full name: ");
 
         String input = nameSC.nextLine();
 
-        String[] fullName = input.split(" ");
 
+        //? splitting their full name into first and last
+        String[] fullName = input.split(" ");
 
         String firstName = fullName[0];
 
         String lastName = fullName[1];
 
 
+        //? if statements for the printing out their name
         if (fullName.length == 2) {
             System.out.printf("First name: %s\nMiddle name: (none)\nLast name: %s" , firstName.trim(), lastName.trim());
-
 
         }else if (fullName.length == 3){
             String middleName = fullName[1];
             String lastName1 = fullName[2];
             System.out.printf("First name: %s\nMiddle name: %s\nLast name: %s", firstName.trim(), middleName.trim(), lastName1.trim());
-
 
         }else {
             System.out.println("To many values");
