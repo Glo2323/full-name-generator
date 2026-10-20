@@ -12,7 +12,7 @@ public class FullNameApplication {
         System.out.println("======Please enter your name======");
 
         //Pulling methods to ask for names
-        String fullName = firstName(nameSC).trim() + " " + middleName(nameSC).trim() + " " + lastName(nameSC).trim() + " " + suffix(nameSC).trim();
+        String fullName = firstName(nameSC).trim() + " " + middleName(nameSC).trim() + " " + lastName(nameSC).trim() + ", " + suffix(nameSC).trim();
 
         // Printing out there full name
         System.out.printf("""
